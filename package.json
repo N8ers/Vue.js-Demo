@@ -1,0 +1,22 @@
+{
+  "name": "vue.js-demo",
+  "version": "1.0.0",
+  "description": "This is a high-level demo of Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N8ers/Vue.js-Demo.git"
+  },
+  "author": "Naters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N8ers/Vue.js-Demo/issues"
+  },
+  "homepage": "https://github.com/N8ers/Vue.js-Demo#readme",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}

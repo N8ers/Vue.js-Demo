@@ -3,8 +3,33 @@
   <head>
     <title>Vue.js-Demo</title>
     <link rel="stylesheet" type="text/css" href="../www/css.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <h1 class="yo">Hello World!</H1>
+    <!-- <h1 class="yo">Hello World!</h1> -->
+    <div id="app">
+        <input @keypress.enter="addTodoItem()" v-model="newTodoText" />
+        <button @click"addTodoItem()">Add todo</button>
+        <ul>
+            <li v-for="todo in todoList">{{ todo }}</li>
+        </ul>
+    </div>
+    <script>
+        let app = new Vue({
+            el: new "#app",
+            data: {
+                todoList: [],
+                newTodoText:""
+            },
+            methods: {
+                addTodoItem(){
+                    if (this.newTodoText.length <=0) return;
+                    this.TodoList.push(this.newTodoText);
+                    this.newTodoText ="";
+                }
+            }
+        });
+    </script>
   </body>
 </html>
